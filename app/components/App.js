@@ -5,25 +5,22 @@ import {
   Text,
   View
 } from 'react-native';
+import { StackNavigator } from 'react-navigation';
 
-export default class ChatApp2 extends Component {
+class HomeScreen extends Component {
+  static navigationOptions = {
+    title: 'Welcome',
+  };
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.ios.js
-        </Text>
-        <Text style={styles.instructions}>
-          Press Cmd+R to reload,{'\n'}
-          Cmd+D or shake for dev menu
-        </Text>
-      </View>
+      <Text>Hello, Navigation!</Text>
     );
   }
 }
+
+const ChatApp2 = StackNavigator({
+  Home: { screen: HomeScreen },
+});
 
 const styles = StyleSheet.create({
   container: {
