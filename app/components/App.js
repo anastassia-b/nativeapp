@@ -3,18 +3,19 @@ import {
   AppRegistry,
   StyleSheet,
   Text,
-  View
+  View,
+  Button
 } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 
 class ChatScreen extends React.Component {
   static navigationOptions = {
-    title: 'Chat with Lucy',
+    title: 'Chat with Anastassia',
   };
   render() {
     return (
       <View>
-        <Text>Chat with Lucy</Text>
+        <Text>Chat with Anastassia</Text>
       </View>
     );
   }
